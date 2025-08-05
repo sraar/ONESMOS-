@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="container header-container">
+    <div class="logo">ONESMOS NESIB ACADEMY</div>
+    <nav class="nav" id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-controls">
+      <button id="theme-toggle">🌙</button>
+      <button id="hamburger">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<main class="container" style="max-width: 600px; padding: 2rem;">
+  <h1 data-aos="fade-down">Contact Us</h1>
+  <form action="https://formspree.io/f/xkgzqjyy" method="POST" class="form" data-aos="fade-up">
+    <label>Name *</label>
+    <input type="text" name="name" required>
+
+    <label>Email *</label>
+    <input type="email" name="_replyto" required>
+
+    <label>Message *</label>
+    <textarea name="message" rows="4" required></textarea>
+
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Onesmos Nesib Academy | All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="js/script.js"></script>
+</body>
+</html>

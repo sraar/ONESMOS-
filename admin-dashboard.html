@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="container">
+  <h1>Admin Dashboard</h1>
+
+  <label>Filter by Grade:</label>
+  <select id="grade-filter">
+    <option value="all">All</option>
+    <option>Grade 1</option><option>Grade 2</option><option>Grade 3</option>
+    <option>Grade 4</option><option>Grade 5</option><option>Grade 6</option>
+    <option>Grade 7</option><option>Grade 8</option><option>Grade 9</option>
+    <option>Grade 10</option><option>Grade 11</option><option>Grade 12</option>
+  </select>
+
+  <table id="students-table" border="1" style="width:100%; margin-top: 1rem;">
+    <thead>
+      <tr><th>Name</th><th>Email</th><th>Grade</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Sample Student</td><td>student@email.com</td><td>Grade 12</td></tr>
+    </tbody>
+  </table>
+
+  <h2 style="margin-top: 2rem;">Update Grades</h2>
+  <form action="https://formspree.io/f/xvgqwkly" method="POST" class="form">
+    <label>Student Email *</label>
+    <input type="email" name="student_email" required>
+    <label>Grade *</label>
+    <input type="text" name="grade" required>
+    <label>Result *</label>
+    <input type="text" name="result" required>
+    <button type="submit" class="btn btn-primary">Submit Grade</button>
+  </form>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>

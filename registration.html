@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="container header-container">
+    <div class="logo">ONESMOS NESIB ACADEMY</div>
+    <nav class="nav" id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="registration.html" class="active">Registration</a></li>
+        <li><a href="portal.html">Portal</a></li>
+        <li><a href="grades.html">Grades</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-controls">
+      <button id="theme-toggle">🌙</button>
+      <button id="hamburger">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<main class="container" style="max-width: 600px; padding: 2rem;">
+  <h1 data-aos="fade-down">Student Registration</h1>
+  <form action="https://formspree.io/f/xpwlypbk" method="POST" enctype="multipart/form-data" class="form" data-aos="fade-up">
+    <label>Full Name *</label>
+    <input type="text" name="fullname" required>
+
+    <label>Email *</label>
+    <input type="email" name="email" required>
+
+    <label>Phone *</label>
+    <input type="tel" name="phone" required>
+
+    <label>Grade *</label>
+    <select name="grade" required>
+      <option value="">Select Grade</option>
+      <option>Grade 1</option><option>Grade 2</option><option>Grade 3</option>
+      <option>Grade 4</option><option>Grade 5</option><option>Grade 6</option>
+      <option>Grade 7</option><option>Grade 8</option><option>Grade 9</option>
+      <option>Grade 10</option><option>Grade 11</option><option>Grade 12</option>
+    </select>
+
+    <label>Upload Document *</label>
+    <input type="file" name="document" accept=".pdf,.jpg,.jpeg,.png" required>
+
+    <label>Additional Information</label>
+    <textarea name="message" rows="4"></textarea>
+
+    <button type="submit" class="btn btn-primary">Submit Registration</button>
+  </form>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Onesmos Nesib Academy | All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="js/script.js"></script>
+</body>
+</html>
